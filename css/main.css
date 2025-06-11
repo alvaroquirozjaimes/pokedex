@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.nav {
+  background-color: #ef5350;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav img {
+  width: 120px;
+}
+
+#search {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item,
+.btn-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokemon-todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.pokemon {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon img {
+  width: 120px;
+  height: 120px;
+}
+
+.pokemon-id {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.pokemon-nombre {
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.pokemon-tipos {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tipo {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.fire { background-color: #fd7d24; }
+.water { background-color: #4592c4; }
+.grass { background-color: #9bcc50; }
+.electric { background-color: #eed535; color: black; }
+.normal { background-color: #a4acaf; }
+.psychic { background-color: #f366b9; }
+.rock { background-color: #a38c21; }
+
+.pokemon-stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.paginacion {
+  text-align: center;
+  margin: 1rem;
+}
+
+.paginacion .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ef5350;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

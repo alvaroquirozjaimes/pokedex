@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <img src="./img/logo.png" alt="Logo Pokédex" />
+      <input type="text" id="search" placeholder="Buscar por nombre..." />
+      <ul class="nav-list">
+        <li><button class="btn btn-header" id="ver-todos">Ver todos</button></li>
+        <li><button class="btn btn-header fire" id="fire">Fire</button></li>
+        <li><button class="btn btn-header water" id="water">Water</button></li>
+        <li><button class="btn btn-header grass" id="grass">Grass</button></li>
+        <li><button class="btn btn-header electric" id="electric">Electric</button></li>
+        <li><button class="btn btn-header normal" id="normal">Normal</button></li>
+        <li><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
+        <li><button class="btn btn-header rock" id="rock">Rock</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="todos">
+      <div class="pokemon-todos" id="listaPokemon"></div>
+      <div class="paginacion">
+        <button id="prev" class="btn">Anterior</button>
+        <span id="pagina-actual">1</span>
+        <button id="next" class="btn">Siguiente</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
